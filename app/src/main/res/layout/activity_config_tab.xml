@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aakash.frompc.ConfigTabActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar">
+    </include>
+
+    <EditText
+        android:id="@+id/IpText"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/app_bar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="IP Address"
+        android:textSize="20dp"
+        android:theme="@style/AppTheme.Base"
+        android:textColor="@color/textPrimary"/>
+
+    <EditText
+        android:id="@+id/PortText"
+        android:layout_width="250dp"
+        android:inputType="number"
+        android:textColor="@color/textPrimary"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/IpText"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:theme="@style/AppTheme.Base"
+        android:hint="Port"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/textSecondary"
+        android:layout_below="@+id/PortText"
+        android:layout_width="wrap_content"
+        android:theme="@style/AppTheme.Base"
+        android:layout_height="wrap_content"
+        android:text="Remember" />
+
+
+    <Button
+        android:id="@+id/buttonConfig"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkbox"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Configure"
+        android:theme="@style/AppTheme.Base"
+        android:elevation="10dp"
+        android:textColor="#000000"
+        android:background="@color/buttonColor"
+        android:layout_alignEnd="@+id/PortText"
+        android:layout_alignStart="@+id/PortText" />
+</RelativeLayout>
